@@ -1,0 +1,27 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Listing</title>
+</head>
+<body>
+<h1>Music Listing</h1>
+<ul>
+{% for music_file in music_files %}
+<li>
+<h3>{{ music_file.title }}</h3>
+<p>Artist: {{ music_file.artist }}</p>
+<p>Album: {{ music_file.album }}</p>
+<p>Genre: {{ music_file.genre }}</p>
+<p>Price: {{ music_file.price }}</p>
+<a href="/checkout?music_file={{ music_file.title }}">Add to Cart</a>
+</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
+
