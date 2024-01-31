@@ -1,0 +1,40 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+</head>
+<body>
+<h1>Checkout</h1>
+<form action="/purchase" method="POST">
+<label for="name">Name:</label>
+<input type="text" name="name" id="name">
+<br>
+<label for="email">Email:</label>
+<input type="email" name="email" id="email">
+<br>
+<label for="credit_card_number">Credit Card Number:</label>
+<input type="text" name="credit_card_number" id="credit_card_number">
+<br>
+<label for="expiration_date">Expiration Date:</label>
+<input type="text" name="expiration_date" id="expiration_date">
+<br>
+<label for="cvv_code">CVV Code:</label>
+<input type="text" name="cvv_code" id="cvv_code">
+<br>
+<label for="currency">Currency:</label>
+<select name="currency" id="currency">
+<option value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+</select>
+<br>
+<input type="submit" value="Purchase">
+</form>
+</body>
+</html>
+
+
+
